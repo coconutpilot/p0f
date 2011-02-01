@@ -10,9 +10,9 @@
 CC      = gcc
 LIBS	= -lpcap
 STRIP   = strip
-CFLAGS  = -O3 -Wall -fomit-frame-pointer -funroll-loops \
-          -DUSE_BPF=\"${USE_BPF}\" \
-	  -I/usr/include/pcap -I/usr/local/include/pcap -I/usr/local/include
+CFLAGS  = -O3 -Wall -fomit-frame-pointer -funroll-loops
+#          -DUSE_BPF=\"${USE_BPF}\" \
+#	  -I/usr/include/pcap -I/usr/local/include/pcap -I/usr/local/include
 FILE	= p0f
 TOOLS   = test/sendack test/sendack2 test/sendsyn
 
